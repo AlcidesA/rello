@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost/rello'
+app.config['SECRET_KEY'] = 'yoursecret'
 
 db = SQLAlchemy(app)
 
